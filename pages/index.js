@@ -82,7 +82,7 @@ export default function Mint() {
       return {
         success: true,
         status: (
-          <a href={`https://goerli.etherscan.io/tx/${hash}`} target="_blank">
+          <a href={`https://goerli.etherscan.io/tx/${hash}`} target="_blank" rel="noopener noreferrer">
             <p>✅ Check out your transaction on Etherscan:</p>
             <p>{`https://goerlinpm .etherscan.io/tx/${hash}`}</p>
           </a>
