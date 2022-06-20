@@ -10,7 +10,7 @@ import { css } from '@emotion/react'
 import waggle from '../public/images/waggle.json'
 const { createAlchemyWeb3 } = require('@alch/alchemy-web3')
 const contract = require('../artifacts/contracts/WITHS.sol/WIHTS.json')
-const web3 = createAlchemyWeb3(process.env.NEXT_PUBLIC_ALCHEMY_RPC_URL)
+const web3 = createAlchemyWeb3("https://eth-goerli.alchemyapi.io/v2/qOmjzEbbsBY5EQvh2kuytzO6Y6XAlku0")
 
 const nftContract = new web3.eth.Contract(contract.abi, config.contractAddress)
 
