@@ -1,0 +1,10 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "BitScan",
+  "sourceName": "contracts/BitScan.sol",
+  "abi": [],
+  "bytecode": "0x60808060405234601757603a9081601d823930815050f35b600080fdfe600080fdfea264697066735822122042d8bb954a2fbf5ce5e7905433f30ee6c7c227fc9f115c8751f265715419d17364736f6c634300080f0033",
+  "deployedBytecode": "0x600080fdfea264697066735822122042d8bb954a2fbf5ce5e7905433f30ee6c7c227fc9f115c8751f265715419d17364736f6c634300080f0033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

@@ -1,1 +1,1 @@
-# WIHTS
+# WIHTS NFT Minting dApp

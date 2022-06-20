@@ -1,0 +1,10 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "BitMaps",
+  "sourceName": "contracts/BitMaps.sol",
+  "abi": [],
+  "bytecode": "0x60808060405234601757603a9081601d823930815050f35b600080fdfe600080fdfea264697066735822122062750015eb91afe33d143838fe8ee57dea9686bc6b59939d4ed4e8a718abdacc64736f6c634300080f0033",
+  "deployedBytecode": "0x600080fdfea264697066735822122062750015eb91afe33d143838fe8ee57dea9686bc6b59939d4ed4e8a718abdacc64736f6c634300080f0033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
