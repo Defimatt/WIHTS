@@ -279,7 +279,7 @@ export default function Mint() {
 
             {/* Contract Address */}
             <div className="border-t border-gray-800 flex flex-col items-center mt-10 py-2 w-full">
-            <a href="https://twitter.com/WishIHadTheSame"><img style={{width: "75px"}} src="images/twitter.png" /></a>
+            <a href="https://twitter.com/WishIHadTheSame" target="_blank" rel="noopener noreferrer"><img style={{width: "75px"}} src="images/twitter.png" /></a>
               <a
                 href={`https://etherscan.io/address/${config.contractAddress}`}
                 target="_blank"
