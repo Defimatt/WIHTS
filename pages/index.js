@@ -10,7 +10,7 @@ import { css } from '@emotion/react'
 import waggle from '../public/images/waggle.json'
 const { createAlchemyWeb3 } = require('@alch/alchemy-web3')
 const contract = require('../artifacts/contracts/WITHS.sol/WIHTS.json')
-const web3 = createAlchemyWeb3("https://eth-goerli.alchemyapi.io/v2/qOmjzEbbsBY5EQvh2kuytzO6Y6XAlku0")
+const web3 = createAlchemyWeb3("https://eth-mainnet.alchemyapi.io/v2/eNbi38XIt5PPjMmTVjGFHNZ-rDCMTtKP")
 
 const nftContract = new web3.eth.Contract(contract.abi, config.contractAddress)
 
@@ -82,9 +82,9 @@ export default function Mint() {
       return {
         success: true,
         status: (
-          <a href={`https://goerli.etherscan.io/tx/${hash}`} target="_blank" rel="noopener noreferrer">
+          <a href={`https://etherscan.io/tx/${hash}`} target="_blank" rel="noopener noreferrer">
             <p>✅ Check out your transaction on Etherscan:</p>
-            <p>{`https://goerlinpm .etherscan.io/tx/${hash}`}</p>
+            <p>{`https://etherscan.io/tx/${hash}`}</p>
           </a>
         )
       }

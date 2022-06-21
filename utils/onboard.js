@@ -5,7 +5,7 @@ import coinbaseModule from '@web3-onboard/coinbase'
 
 import WIHTSLogo from '../WIHTSLogo'
 
-const RPC_URL = "https://eth-goerli.alchemyapi.io/v2/qOmjzEbbsBY5EQvh2kuytzO6Y6XAlku0"
+const RPC_URL = "https://eth-mainnet.alchemyapi.io/v2/eNbi38XIt5PPjMmTVjGFHNZ-rDCMTtKP"
 
 const injected = injectedModule()
 const walletConnect = walletConnectModule()
