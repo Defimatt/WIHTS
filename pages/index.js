@@ -97,11 +97,11 @@ export default function Mint() {
   }
 
   useEffect(() => {
-    setTotalPrice(price * (claimed == 0 ? mintAmount - 1 : mintAmount))
+    setTotalPrice(price * (claimed == 0 && freeMints < 2000 ? mintAmount - 1 : mintAmount))
   }, [mintAmount])
 
   useEffect(() => {
-    setText(`${claimed == 0 ? 'Your first one is free! ' : ''}Cost: ${ethers.utils.formatUnits("" + totalPrice)} Eth.`)
+    setText(`${claimed == 0 && freeMints < 2000 ? 'Your first one is free! ' : ''}Cost: ${ethers.utils.formatUnits("" + totalPrice)} Eth.`)
   }, [totalPrice])
 
   useEffect(() => {
