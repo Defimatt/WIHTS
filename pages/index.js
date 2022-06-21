@@ -260,7 +260,7 @@ export default function Mint() {
                 {claimable > 0 ? (
                   <div>
                   <p className="text-brand-pink">{text}</p>
-                  <img src="/images/mint.png" onClick={mintHandler} />
+                  <img src="/images/mint.png" onClick={mintHandler} style={{cursor: "pointer"}} />
                   </div>
                 ) : (<div></div>)}
 
