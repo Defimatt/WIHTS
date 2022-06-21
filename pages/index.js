@@ -257,7 +257,7 @@ export default function Mint() {
                 {claimable > 0 ? (
                   <div>
                   <p className="text-white">{text}</p>
-                  <img src="/images/mint.png" onClick={mintHandler} style={{cursor: "pointer"}} />
+                  <img className="animate-[bounce_0.8s_ease-in-out_infinite]" src="/images/mint.png" onClick={mintHandler} style={{cursor: "pointer"}} />
                   </div>
                 ) : (<div></div>)}
 
