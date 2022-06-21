@@ -15,9 +15,9 @@ const initOnboard = init({
   wallets: [walletConnect, coinbaseWallet, injected],
   chains: [
     {
-      id: '0x5',
-      token: 'rETH',
-      label: 'Ethereum Goerli Testnet',
+      id: '0x1',
+      token: 'ETH',
+      label: 'Ethereum',
       rpcUrl: RPC_URL
     }
   ],
