@@ -10,10 +10,10 @@
   --clr-yellow: #fee440;
   --clr-blue: #00bbf9;
   --clr-green: #00f5d4;
-  --clr-selection-bg: #cb3d92;
-  --clr-selection-text: #f4f0f0;
+  --clr-selection-bg: #693636;
+  --clr-selection-text: #060606;
   --clr-background: #06070a;
-
+  
   /* Customize Wallet Modal */
   /* CUSTOMIZE THE COLOR  PALLETTE */
   --onboard-white: white;
@@ -66,59 +66,3 @@ html {
   background: var(--clr-selection-bg);
   color: var(--clr-selection-text);
 }
-
-.horizontal-slider {
-  width: 100%;
-  max-width: 500px;
-  margin: auto;
-}
-.example-thumb {
-  cursor: pointer;
-  position: absolute;
-  z-index: 100;
-  background: #ffffff;
-  border: 5px solid #3774ff;
-  border-radius: 100%;
-  display: block;
-  box-shadow: 0 0 2px 0 rgb(0 0 0 / 44%);
-}
-.example-thumb.active {
-  background-color: grey;
-}
-.example-track {
-  position: relative;
-  background: #ddd;
-}
-.example-track.example-track-0 {
-  background: #83a9ff;
-}
-.horizontal-slider .example-track {
-  top: 20px;
-  height: 4px;
-}
-.horizontal-slider .example-thumb {
-  top: 12px;
-  width: 10px;
-  outline: none;
-  height: 10px;
-  line-height: 38px;
-}
-.example-mark {
-  width: 8px;
-  height: 8px;
-  border: 2px solid rgb(0, 0, 0);
-  background-color: rgb(255, 255, 255);
-  cursor: pointer;
-  border-radius: 50%;
-  vertical-align: middle;
-  margin: 0px calc(19px);
-  bottom: calc(50% - 6px);
-}
-.example-mark.example-mark-active {
-  border: 2px solid #00d4ff;
-  background-color: rgb(255, 255, 255);
-}
-.example-mark.example-mark-completed {
-  border: 2px solid rgb(255, 255, 255);
-  background-color: #00d4ff;
-} 

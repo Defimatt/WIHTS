@@ -164,7 +164,7 @@ export default function Mint() {
         />
 
         <div className="flex flex-col items-center justify-center h-full w-full px-2 md:px-10">
-          <div className="relative z-1 md:max-w-3xl w-full bg-gray-900/90 filter backdrop-blur-sm py-4 rounded-md px-2 md:px-10 flex flex-col items-center">
+          <div className="relative z-1 md:max-w-3xl w-full bg-[#201d1d]/60 filter backdrop-blur-sm py-4 rounded-md px-2 md:px-10 flex flex-col items-center">
             {wallet && (
               <button
                 className="absolute right-4 bg-red-600 transition duration-200 ease-in-out font-chalk border-2 border-[rgba(0,0,0,1)] shadow-[0px_3px_0px_0px_rgba(0,0,0,1)] active:shadow-none px-4 py-2 rounded-md text-sm text-white tracking-wide uppercase"
@@ -224,10 +224,10 @@ export default function Mint() {
                 {/* Mint Button && Connect Wallet Button */}
                 {wallet ? (
                   <div className="mt-14">
-                    <p className="text-brand-pink">
+                    <p className="text-white">
                       You have minted <span style={{fontWeight: "bold"}}>{claimed == -1 ? '(Loading...)' : claimed}</span>{' '}
                       out of 10, you can mint{' '}
-                      <span style={{fontWeight: "bold"}}>{claimable == -1 ? '(Loading...)' : claimable}</span>. (Tip: mint more in the same transaction to get gas savings!)
+                      <span style={{fontWeight: "bold"}}>{claimable == -1 ? '(Loading...)' : claimable}</span>. <span style={{fontStyle: "italic"}}>(Tip: mint more in the same transaction to get gas savings!)</span>
                     </p>
                   </div>
                 ) : (
@@ -256,7 +256,7 @@ export default function Mint() {
                 ) : (<div></div>)}
                 {claimable > 0 ? (
                   <div>
-                  <p className="text-brand-pink">{text}</p>
+                  <p className="text-white">{text}</p>
                   <img src="/images/mint.png" onClick={mintHandler} style={{cursor: "pointer"}} />
                   </div>
                 ) : (<div></div>)}
