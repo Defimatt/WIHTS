@@ -82,7 +82,7 @@ export default function Mint() {
       return {
         success: true,
         status: (
-          <a href={`https://goerli.etherscan.io/tx/${hash}`} target="_blank">
+          <a href={`https://goerli.etherscan.io/tx/${hash}`} target="_blank" rel="noopener noreferrer">
             <p>✅ Check out your transaction on Etherscan:</p>
             <p>{`https://goerlinpm .etherscan.io/tx/${hash}`}</p>
           </a>
@@ -230,7 +230,7 @@ export default function Mint() {
                     <p className="text-brand-pink">
                       You have minted {claimed == -1 ? '(Loading...)' : claimed}{' '}
                       out of 10, you can mint{' '}
-                      {claimable == -1 ? '(Loading...)' : claimable}.
+                      {claimable == -1 ? '(Loading...)' : claimable}. (Tip: mint more in the same transaction to get gas savings!)
                     </p>
                   </div>
                 ) : (
@@ -260,7 +260,7 @@ export default function Mint() {
                 {claimable > 0 ? (
                   <div>
                   <p className="text-brand-pink">{text}</p>
-                  <img src="/images/mint.png" onClick={mintHandler} />
+                  <img src="/images/mint.png" onClick={mintHandler} style={{cursor: "pointer"}} />
                   </div>
                 ) : (<div></div>)}
 
