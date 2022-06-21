@@ -215,7 +215,7 @@ export default function Mint() {
                     ) : (
                       <div>
                       <span className="text-brand-pink">
-                        First one free, then {friendlyPrice} Eth each
+                        Free mints sold out! {friendlyPrice} Eth each
                       </span>
                       </div>
                     )}
