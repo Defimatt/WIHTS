@@ -280,13 +280,17 @@ export default function Mint() {
               </div>
             )}
 
+            <div className=" flex flex-col items-center  w-full">
+              <a href="https://twitter.com/WishIHadTheSame"><img style={{width: "75px"}} src="images/twitter.png" /></a>
+            </div>
+
             {/* Contract Address */}
             <div className="border-t border-gray-800 flex flex-col items-center mt-10 py-2 w-full">
               <h3 className="text-2xl text-brand-pink mt-6">
                 Contract Address
               </h3>
               <a
-                href={`https://rinkeby.etherscan.io/address/${config.contractAddress}#readContract`}
+                href={`https://etherscan.io/address/${config.contractAddress}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 mt-4"
