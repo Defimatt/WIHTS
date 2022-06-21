@@ -230,7 +230,7 @@ export default function Mint() {
                     <p className="text-brand-pink">
                       You have minted {claimed == -1 ? '(Loading...)' : claimed}{' '}
                       out of 10, you can mint{' '}
-                      {claimable == -1 ? '(Loading...)' : claimable}.
+                      {claimable == -1 ? '(Loading...)' : claimable}. (Tip: mint more in the same transaction to get gas savings!)
                     </p>
                   </div>
                 ) : (
