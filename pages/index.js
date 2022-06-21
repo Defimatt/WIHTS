@@ -159,7 +159,7 @@ export default function Mint() {
     <div className="min-h-screen h-full w-full overflow-hidden flex flex-col items-center justify-center bg-brand-background ">
       <div className="relative w-full h-full flex flex-col items-center justify-center">
         <img
-          src="/images/blur.jpeg"
+          src="/images/blur.png"
           className="animate-pulse-slow absolute inset-auto block w-full min-h-screen object-cover"
         />
 
@@ -177,9 +177,6 @@ export default function Mint() {
                 Disconnect
               </button>
             )}
-            <h1 className="font-bold text-3xl md:text-4xl bg-gradient-to-br  from-brand-green to-brand-blue bg-clip-text text-transparent mt-3">
-              Wish I Had The Same
-            </h1>
             <h3 className="text-sm text-pink-200 tracking-widest">
               {wallet?.accounts[0]?.address
                 ? wallet?.accounts[0]?.address.slice(0, 8) +
@@ -280,15 +277,9 @@ export default function Mint() {
               </div>
             )}
 
-            <div className=" flex flex-col items-center  w-full">
-              <a href="https://twitter.com/WishIHadTheSame"><img style={{width: "75px"}} src="images/twitter.png" /></a>
-            </div>
-
             {/* Contract Address */}
             <div className="border-t border-gray-800 flex flex-col items-center mt-10 py-2 w-full">
-              <h3 className="text-2xl text-brand-pink mt-6">
-                Contract Address
-              </h3>
+            <a href="https://twitter.com/WishIHadTheSame"><img style={{width: "75px"}} src="images/twitter.png" /></a>
               <a
                 href={`https://etherscan.io/address/${config.contractAddress}`}
                 target="_blank"
